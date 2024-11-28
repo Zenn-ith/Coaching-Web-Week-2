@@ -3,24 +3,24 @@ import React, { useState } from 'react';
 const Input = () => {
   const [nama, setNama] = useState('');
 
-  const handleInputChange = (e) => {
+  const ubahNama = (e) => {
     setNama(e.target.value);
   };
 
-  const handleSubmit = () => {
-    document.getElementById('nama').innerText = nama;
+  const kirimNama = () => {
+    document.getElementById('namaDisplay').innerText = nama;
   };
 
   return (
     <div className="inputContainer">
-      <p id="nama"></p>
+      <p id="namaDisplay"></p>
       <input 
         type="text" 
         placeholder="Masukkan nama Anda" 
         value={nama} 
-        onChange={handleInputChange} 
+        onChange={ubahNama} 
       />
-      <button onClick={handleSubmit}>Submit</button>
+      <button onClick={kirimNama}>Submit</button>
     </div>
   );
 };
