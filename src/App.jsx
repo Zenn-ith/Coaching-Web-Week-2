@@ -4,8 +4,6 @@ import Counter from './component/counter'
 import Input from './component/input'
 import Nama from './component/name'
 
-
-
 function App() {
 
   return (
