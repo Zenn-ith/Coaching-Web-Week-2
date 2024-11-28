@@ -11,7 +11,7 @@ function App() {
       <Input />
       <Nama nama="Adrian Reynaldi" npm="2428250011" github="https://github.com/Zenn-ith/Coaching-Web-Week-2.git" />
       <Counter />
-      <Rcolor />
+      <backgroundColor />
     </div>
   )
 }
